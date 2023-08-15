@@ -19,5 +19,5 @@ Check out the demo website at https://romanticism-prompts.netlify.app/
 
 ## Up next:
 
-- Add prompt guides for writing assignments (like blog posts or articles)
-- Add functionality for educators to see which student entered and/or selected a prompt
+- [ ] Add prompt guides for writing assignments 
+- [ ] Add functionality for educator to match student to prompt entered or selected
