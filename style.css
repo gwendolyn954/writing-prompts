@@ -46,6 +46,7 @@ input {
     background-color: #f4f4f4;
     border: 0;
     border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     font-size: 20px;
     font-family: 'Nanum Myeongjo', serif;
     text-align: center;
@@ -55,10 +56,11 @@ input {
 
 
 button {
-    color: #fdfdfd;
-    background-color: #4f829f;
+    color: #ffffff;
+    background-color: #000000;
     border: 0;
     border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     font-size: 20px;
     font-family: 'Nanum Myeongjo', serif;
     text-align: center;
@@ -66,7 +68,6 @@ button {
 }
 
 button:hover {
-    background-color: #307b7c;
     cursor: pointer;
 }
 
@@ -80,16 +81,16 @@ ul {
 
 ul li {
     font-size: 20px;
-    background: #000000;
-    color: #e6e5e5;
+    background: #9aa3b6;
+    color: #000000;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     flex-grow: 1;
     text-align: center;
 }
 
 ul li:hover {
-    background-color: #307b7c;
+    background-color: #db8b7f;
     cursor: pointer;
 }
