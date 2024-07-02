@@ -3,13 +3,7 @@
 ![Project Screenshot](https://github.com/gwendolyn954/writing-prompts/blob/main/assets/img/writing-prompts-main.png)
 
 ## Overview
-This is a demo web application of a freelance client project (writing prompt web application)
-
-### Client Overview
-
-Under the request of an educator client, I was asked to build a web application that:
-- allows students to enter or select a writing prompt
-- once a prompt is selected, it disappears from view or is deleted
+This is a demo web application of a freelance project. The purpose of this project was to build a classroom tool that will allow Literature students to enter a writing prompt and/or select a prompt from the list, which would disappear from view upon selection.
 
 ## Tech Used 
 Firebase • JavaScript • CSS • HTML
