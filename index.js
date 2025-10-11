@@ -16,7 +16,7 @@ const promptListEl = document.getElementById('prompt-list')
 
 addButtonEl.addEventListener('click', function() {
     let inputValue = inputFieldEl.value
-    push(promptsInDB, inputValue) //push to database
+    push(promptsInDB, inputValue) //pushes to database
     clearInputField()
 })
 
