@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Romanticism Writing Prompts</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <main>
-            <div class="container">
-                <img src="assets/img/mrs-rose-logo.png" alt="a group of pink roses
-                ">
-                <h1>Romanticism Prompts</h1>
-                <h2>Mrs. Rose-Reynard <br> English Literature 11</h2>
-                <p>Enter a prompt phrase & select one to claim it for your writing assignment.</p>
-                <p>Feel free to format your assignment as a poem, dialogue, or a letter, perhaps.</p>
-                <label for="input-field">Let's get creative!</label>
-                <input type="text" id="input-field" placeholder="Enter your prompt here">
-                <button id="add-button">Add prompt idea</button>
-                <ul id="prompt-list">
-                    
-                </ul>
-            </div>
-        </main>
-        
-        <!-- must have module as type to make firebase work since using import -->
-        <script src="index.js" type="module"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Romanticism Writing Prompts</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="rp-layout">
+      <div class="container" role="region" aria-label="Prompt creator">
+        <img src="assets/img/mrs-rose-logo.png" alt="A bouquet of pink roses">
+        <h1>Romanticism Prompts</h1>
+        <h2>Mrs. Rose-Reynard <br> English Literature 11</h2>
+        <p>Hi Students :)</p>
+        <p>Welcome to Romanticism Prompts! Enter a  prompt phrase to add it to the pool. Next, select a prompt (not your own) to use for the writing portion the assignment.</p>
+        <p>Format your piece however you like—poem, dialogue, or letter. Have fun with it.</p>
+        <label for="input-field">Let's get creative!</label>
+        <input type="text" id="input-field" placeholder="e.g., Byronic hero, Gothic decay">
+        <button id="add-button" aria-label="Add phrase">Add Prompt</button>
+        <p id="status" role="status" aria-live="polite" class="sr-status"></p>
+        <ul id="prompt-list" aria-label="Available phrases"></ul>
+
+        <!-- Sidebar Button-->
+        <button class="rp-help-toggle" aria-expanded="false" aria-controls="how-it-works-panel">
+          How It Works
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" class="chev">
+            <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+        <div id="how-it-works-panel" class="rp-collapsible" hidden></div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="rp-sidebar" aria-labelledby="how-it-works-title">
+        <div class="rp-sidebar__header">
+          <h2 id="how-it-works-title">How It Works:</h2>
+        </div>
+            <ol class="rp-steps">
+            <li><span class="rp-steps__text">Add a Romanticism prompt phrase to the prompts pool.</span></li>
+            <li><span class="rp-steps__text">Choose one prompt for yourself.</span></li>
+            <li><span class="rp-steps__text">When you select a prompt, it disappears from view.</span></li>
+            <li><span class="rp-steps__text">Complete the writing portion of the assignment and upload it to the class portal.</span></li>
+            </ol>
+      </aside>
+    </main>
+    <script src="index.js" type="module"></script>
+    <script src="sidebar.js" defer></script>
+  </body>
 </html>
-
-
-
 
